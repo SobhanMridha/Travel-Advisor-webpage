@@ -178,16 +178,136 @@ body {
 }
 
 .tour-content p {
-    padding-top: 24px;
-    padding-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .tour-content ul {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .tour-content li {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+/* destination section  */
+
+.destination-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.destination-content p {
+  width: 643px;
+  padding-top: 24px;
+}
+
+/* card section  */
+
+.card-container p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.row-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: fit-content;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.row-1-left {
+  position: relative;
+}
+
+.row-1-left p {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
+.row-1-right {
+  position: relative;
+}
+
+.row-1-right p {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 0.5fr;
+  margin: 0 auto;
+  width: fit-content;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.row-2-left {
+  position: relative;
+}
+
+.row-2-left p {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+}
+
+.row-2-middle {
+  position: relative;
+}
+
+.row-2-middle p {
+  position: absolute;
+  top: 40%;
+  left: 33%;
+}
+
+.row-2-right {
+  position: relative;
+}
+
+.row-2-right p {
+  position: absolute;
+  top: 45%;
+  left: 33%;
+}
+
+.row-3 {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+.row-3-left {
+  position: relative;
+}
+
+.row-3-left p {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+}
+
+.row-3-right {
+  position: relative;
+}
+
+.row-3-right p {
+  position: absolute;
+  top: 45%;
+  left: 40%;
 }
 
 /* Responsive section  */
@@ -235,7 +355,7 @@ body {
   .location button > img {
     margin-left: 50px;
   }
-  
+
   /* tour section  */
 
   .tour-container {
@@ -243,14 +363,41 @@ body {
     flex-direction: column;
   }
 
-   .tour-content {
+  .tour-content {
     width: 80%;
-   } 
+  }
 
   .tour-container img {
     width: 80%;
   }
-  
 
+  /* destination section  */
+
+  .destination-content h3 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    text-decoration: underline;
+  }
+  .destination-content p {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+
+  .card-container img {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .row-1,
+  .row-2,
+  .row-3 {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+  }
 
 }
