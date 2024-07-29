@@ -488,6 +488,13 @@ body {
   padding-top: 0.8em;
 }
 
+.btn-box {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+
+
 /* Responsive section  */
 
 @media screen and (max-width: 576px) {
@@ -598,7 +605,7 @@ body {
   /* deal section  */
 
   .deal-header p {
-    width: 100%;
+    width: 95%;
   }
 
   .deal-card-background-1,
